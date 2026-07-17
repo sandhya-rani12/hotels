@@ -31,8 +31,6 @@
 // module.exports = db;
 
 
-
-
 import mongoose from 'mongoose';
 
 // MongoDB URL
@@ -55,5 +53,6 @@ db.on('error', (err) => {
 db.on('disconnected', () => {
     console.log("MongoDB disconnected");
 });
+
 
 export default db;
